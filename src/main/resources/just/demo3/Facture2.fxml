@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="just.demo3.Facture">
+    <children>
+          <TableView fx:id="Panier" layoutX="-1.0" layoutY="144.0" prefHeight="514.0" prefWidth="600.0">
+              <columns>
+                  <TableColumn fx:id="Designation_f" prefWidth="248.0" text="Designation" />
+                  <TableColumn fx:id="PU_f" prefWidth="92.0" text="PU" />
+                  <TableColumn fx:id="Qte_f" prefWidth="145.0" text="Qte" />
+                  <TableColumn fx:id="Montant_f" prefWidth="114.0" text="Montant" />
+              </columns>
+          </TableView>
+          <Label layoutX="24.0" layoutY="91.0" text="Nom du client" />
+          <TextField fx:id="Nom_client_f" layoutX="24.0" layoutY="106.0" prefHeight="25.0" prefWidth="324.0" />
+          <Label layoutX="24.0" layoutY="42.0" prefWidth="29.0" text="Date" />
+        <Label layoutX="359.0" layoutY="671.0" text="Total a payer :" />
+        <TextField fx:id="Total_f" layoutX="440.0" layoutY="667.0" prefHeight="25.0" prefWidth="151.0" />
+      <ImageView fitHeight="92.0" fitWidth="91.0" layoutX="508.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon2.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="Date_f" layoutX="24.0" layoutY="59.0" prefHeight="25.0" prefWidth="142.0" />
+    </children>
+
+</AnchorPane>
